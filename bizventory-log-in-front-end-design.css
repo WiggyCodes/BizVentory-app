@@ -1,0 +1,167 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4e34b6, #6a57d5);
+    padding: 20px;
+}
+
+/* Centered Login Form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive Login Box */
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px; /* Increased max width */
+    width: 90%;
+}
+
+/* App Logo */
+.app-logo {
+    width: 120px; /* Adjust size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.login-box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4e34b6;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Google Login Button */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff; /* White text */
+    background: #4e34b6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background: #3a249d;
+}
+
+/* Google Logo */
+.google-logo {
+    width: 20px;
+    height: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f7fafc;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: #fff;
+    border: 1px solid #4e34b6;
+    outline: none;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #4e34b6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3a249d;
+}
+
+/* Forgot Password */
+p.forgot-password {
+    margin-top: -5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+p.forgot-password a {
+    color: #4e34b6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Account Link */
+p.account {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p.account a {
+    color: #4e34b6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p.account a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .app-logo {
+        width: 100px; /* Smaller logo on smaller screens */
+    }
+}
