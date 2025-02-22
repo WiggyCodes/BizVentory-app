@@ -133,22 +133,80 @@
                 </div>
             </div>
 
-            <!--  Likes -->
-            <div style="display:none" class="data-table VehicleDetails">
-                <div class="title">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <span class="text">Vehicles</span>
+           <!-- Customer Purchase -->
+<div style="display:none" class="data-table VehicleDetails">
+    <div class="title">
+        <ion-icon name="bag-outline"></ion-icon>
+        <span class="text">Products</span>
+    </div>
+    <div>
+        <!-- NEW: Purchase Products & Cart Section -->
+        <div class="product-cart-container">
+            <!-- Purchase Products Section -->
+            <div class="products-section">
+                <div class="section-header">
+                    <h2>Purchase Products</h2>
+                    <input type="text" id="search" placeholder="🔍 Search Products here..." onkeyup="filterProducts()">
                 </div>
-                <div>
-                    <!-- Enter any table or section here -->
+                <div class="products-container">
+                    <div class="product-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                        <button onclick="addToCart('Product Name', 100)">Add to cart</button>
+                    </div>
+                    <div class="product-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                        <button onclick="addToCart('Product Name', 150)">Add to cart</button>
+                    </div>
+                    <div class="product-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                        <button onclick="addToCart('Product Name', 200)">Add to cart</button>
+                    </div>
+                    <div class="product-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                        <button onclick="addToCart('Product Name', 250)">Add to cart</button>
+                    </div>
                 </div>
             </div>
 
-            <!-- Downloads section -->
+             <!-- Cart Section -->
+             <div class="cart-section">
+                <h2>Cart</h2>
+                <div class="cart-container">
+                    <div class="cart-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                    </div>
+                    <div class="cart-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                    </div>
+                    <div class="cart-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                    </div>
+                    <div class="cart-box">
+                        <img src="placeholder.png" alt="Product">
+                        <p>Product Name</p>
+                    </div>
+                </div>
+                <div class="total-container">
+                    <strong>Total: ₱<span id="total">0</span></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Add Product -->
             <div style="display:none" class="data-table downloads">
                 <div class="title">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                    <span class="text">Comments</span>
+                    <ion-icon name="add-outline"></ion-icon>
+                    <span class="text">Description</span>
                 </div>
                 <div>
                     <!-- Enter any table or section here -->
